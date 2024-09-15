@@ -1,0 +1,30 @@
+:root {
+    --primary: #E2E8EF;
+    --sidebar: #1991D4;
+    --dark-yellow: #F0B429;
+    --white: #FFFFFF;
+    --buttons: #1991D4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% auto;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.sidebar {
+    background-color: var(--sidebar);
+}
+
+.header {
+    background-color: var(--white);
+    height: 18%;
+}
