@@ -29,9 +29,17 @@ body {
     background-color: var(--sidebar);
 }
 
+.logo-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: var(--white);
+}
+
 .header {
     background-color: var(--white);
-    height: 100%;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 40% 60%;
@@ -111,21 +119,7 @@ body {
     font-weight: 700;
 }
 
-.content {
-    background-color: var(--primary);
-    height: 100%;
-}
-
-.logo-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    color: var(--white);
-}
-
-.title {
+.sidebar-title {
     font-size: 2rem;
     margin: 0;
 }
@@ -160,5 +154,57 @@ body {
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--primary);
     box-shadow: rgba(10, 37, 64, 0.219) 0px 2px 6px 0px inset;
+}
+
+.projects-title {
+    font-size: 1.2rem;
+}
+
+/* #FIXME: da sistemare grid per gestione dimensione ridimensionamento pagina dinamicamente 
+            da rimuovere dimensioni fisse*/
+.project-content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 200px;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+
+.card { 
+    border-radius: 10px;
+    border-left: 8px solid var(--dark-yellow);
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-title,
+.card-text {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.card-title {
+    margin: 20px 0 2px 0;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    width: 80%;
+    font-size: 0.9rem;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 50px 30px 0 0;
+    text-wrap: pretty;
 }
