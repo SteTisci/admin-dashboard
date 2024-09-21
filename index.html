@@ -9,7 +9,7 @@
   </head>
   <body>
     <main class="container">
-      <div class="header">
+      <section class="header">
         <div class="search-bar">
           <img src="images/search.svg" width="25px" height="25px" />
           <input type="text" id="search" />
@@ -31,13 +31,13 @@
           <button>Upload</button>
           <button>Share</button>
         </div>
-      </div>
-      <div class="sidebar">
-        <section class="logo-section">
+      </section>
+      <section class="sidebar">
+        <div class="logo">
           <img src="images/logo.svg" class="logo" width="40px" height="40px" />
           <h2 class="sidebar-title">Dashboard</h2>
-        </section>
-        <section class="sidebar-menu">
+        </div>
+        <div class="sidebar-menu">
           <div class="home">
             <img src="images/home.svg" />
             <p>Home</p>
@@ -62,8 +62,8 @@
             <img src="images/communities.svg" />
             <p>Communitites</p>
           </div>
-        </section>
-        <section class="options-menu">
+        </div>
+        <div class="options-menu">
           <div class="settings">
             <img src="images/settings.svg" />
             <p>Settings</p>
@@ -76,17 +76,17 @@
             <img src="images/privacy.svg" />
             <p>Privacy</p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div class="content">
-        <div class="project-container">
-          <h3 class="projects-title">Your Project</h3>
-          <div class="project-content">
+        <section class="left-side">
+          <h3>Your Projects</h3>
+          <div class="cards-container">
             <div class="card">
-              <h4 class="card-title">Super cool project</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
+              <h4>Super cool project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam.
               </p>
               <div class="card-icons">
                 <img src="images/favourite.svg" width="20px" height="20px" />
@@ -95,10 +95,20 @@
               </div>
             </div>
             <div class="card">
-              <h4 class="card-title">Super cool project</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
+              <h4>Less cool project</h4>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              <div class="card-icons">
+                <img src="images/favourite.svg" width="20px" height="20px" />
+                <img src="images/watch.svg" width="20px" height="20px" />
+                <img src="images/source-fork.svg" width="20px" height="20px" />
+              </div>
+            </div>
+            <div class="card">
+              <h4>Impossible App</h4>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                commodi consequatur.
               </p>
               <div class="card-icons">
                 <img src="images/favourite.svg" width="20px" height="20px" />
@@ -107,10 +117,10 @@
               </div>
             </div>
             <div class="card">
-              <h4 class="card-title">Super cool project</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
+              <h4>Easy Peasy App</h4>
+              <p>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                eius modi tempora.
               </p>
               <div class="card-icons">
                 <img src="images/favourite.svg" width="20px" height="20px" />
@@ -119,11 +129,20 @@
               </div>
             </div>
             <div class="card">
-              <h4 class="card-title">Super cool project</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
+              <h4>Ad Blocker</h4>
+              <p>
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                commodi consequatur.
               </p>
+              <div class="card-icons">
+                <img src="images/favourite.svg" width="20px" height="20px" />
+                <img src="images/watch.svg" width="20px" height="20px" />
+                <img src="images/source-fork.svg" width="20px" height="20px" />
+              </div>
+            </div>
+            <div class="card">
+              <h4>Money Maker</h4>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
               <div class="card-icons">
                 <img src="images/favourite.svg" width="20px" height="20px" />
                 <img src="images/watch.svg" width="20px" height="20px" />
@@ -131,7 +150,66 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="rigth-side">
+          <h3>Announcements</h3>
+          <div class="announcements-container">
+            <div class="announcements-content">
+              <h4>Site Mainteinance</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </div>
+            <div class="announcements-content">
+              <h4>Community Share Day</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </div>
+            <div class="announcements-content">
+              <h4>Updated Privacy policy</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="trending-container">
+            <h3>Trending</h3>
+            <div class="trending-content">
+              <div class="profile-card">
+                <img src="images/avatar1.png" width="50px" height="50px" />
+                <div class="profile-info">
+                  <p>@tegan</p>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="profile-card">
+                <img src="images/avatar4.png" width="50px" height="50px" />
+                <div class="profile-info">
+                  <p>@SteTisci</p>
+                  <p>Super Cool Projects</p>
+                </div>
+              </div>
+              <div class="profile-card">
+                <img src="images/avatar3.png" width="50px" height="50px" />
+                <div class="profile-info">
+                  <p>@kendall</p>
+                  <p>Life Changing App</p>
+                </div>
+              </div>
+              <div class="profile-card">
+                <img src="images/avatar2.png" width="50px" height="50px" />
+                <div class="profile-info">
+                  <p>@alex</p>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
