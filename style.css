@@ -40,8 +40,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 40% 60%;
+    grid-template: 1fr 2fr / 2fr 1fr;
     background-color: var(--white);
     border-bottom: 1px solid var(--borders);
 } 
@@ -268,4 +267,117 @@ body {
 .profile-card:last-child  {
     margin-bottom: 0;
 }
+ 
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+    .header {
+        grid-template: 1fr 2fr / 1fr 1fr;
+    }
 
+    .search-bar,
+    .profile {
+        padding-left: 20px;
+    }
+
+    .notifications,
+    .header-buttons {
+        padding-right: 20px;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .content {
+        grid-template: 1fr / 3.5fr 2fr
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        grid-template-columns: 210px auto;
+    }
+
+    .search-bar,
+    .profile {
+        padding-left: 20px;
+    }
+
+    .notifications,
+    .header-buttons {
+        padding-right: 20px;
+    }
+
+    .header-buttons {
+        gap: 10px;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .sidebar p {
+        font-size: 1.1rem;
+    }
+
+    .sidebar-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 60px auto;
+    }
+
+    .sidebar {
+        padding: 10px ;
+    }
+
+    .sidebar-menu p,
+    .options-menu p,
+    .sidebar-title,
+    .profile {
+        display: none;
+    }
+
+    .header {
+        grid-template-columns: 3fr 1fr; 
+        grid-template-rows: auto auto; 
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box3";
+    }
+
+    .search-bar {
+        grid-area: box1;
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    .notifications {
+        grid-area: box2;
+        padding-right: 30px;
+        gap: 20px
+    }
+
+    .notifications p {
+        display: none;
+    }
+
+    .header-buttons {
+        padding: 0;
+        justify-content: center;
+        grid-area: box3;
+        gap: 10px;
+    }
+
+    .content {
+        grid-template: 1fr / 3.5fr 
+    }
+
+    .rigth-side {
+        display: none;
+    }
+}
